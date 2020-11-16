@@ -1,0 +1,1 @@
+module.exports = [{"text":"uniapp","items":[{"text":"COMPONENTS","link":"/uniapp/components/"}]},{"text":"components","items":[{"text":"COMPONENTS","link":"/components/"}]},{"text":"guide","items":[{"text":"指南","link":"/guide/"}]}];
