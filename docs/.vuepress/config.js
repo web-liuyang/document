@@ -26,7 +26,7 @@ module.exports = {
 				],
 			},
 		],
-		lastUpdated: 'Last Updated'
+		lastUpdated: '最后更新时间'
 	},
 	plugins: [
 		[
@@ -45,10 +45,8 @@ module.exports = {
 			'@vuepress/plugin-last-updated',
 			{
 				transformer: (timestamp, lang) => {
-					// 不要忘了安装 moment
-					const moment = require('moment');
-					moment.locale(lang);
-					return moment(timestamp).fromNow();
+					let time = new Date(timestamp);
+					return time.toLocaleDateString().replace(/\//g, "-") + " " + time.toTimeString().substr(0, 8)
 				},
 			},
 		],
