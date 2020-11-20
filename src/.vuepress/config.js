@@ -1,5 +1,4 @@
 module.exports = {
-	base:'/document',
 	dest:process.cwd() + '/docs',
 	title: 'LiuYang',
 	description: '刘洋的个人博客',
@@ -11,7 +10,9 @@ module.exports = {
 		repoLabel: 'GitHub',
 		nav: [
 			{ text: '指南', link: '/guide/' },
-			{ text: '组件', link: '/components/' },
+			{ text: 'Vue', link: '/vue/' },
+			{ text: 'React', link: '/react/' },
+			{ text: 'Node', link: '/node/' },
 			{
 				text: 'uniapp',
 				ariaLabel: 'uniapp Menu',

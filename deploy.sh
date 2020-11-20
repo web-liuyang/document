@@ -6,6 +6,7 @@ set -e
 # 生成静态文件
 npm run build
 
+
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
 
@@ -13,7 +14,9 @@ git add .
 
 git commit -m 'update'
 
-git push origin master
+git push gitee master
+
+git push github master
 
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
