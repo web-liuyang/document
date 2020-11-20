@@ -8,8 +8,8 @@
     "vuepress-plugin-auto-sidebar": "^1.5.0"
   },
   "scripts": {
-    "start": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "start": "vuepress dev src",
+    "build": "vuepress build src"
   },
   "dependencies": {
     "moment": "^2.29.1"
