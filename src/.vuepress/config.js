@@ -1,6 +1,6 @@
 module.exports = {
 	base:'/document',
-	dest:process.cwd() + '/dosc',
+	dest:process.cwd() + '/docs',
 	title: 'LiuYang',
 	description: '刘洋的个人博客',
 	themeConfig: {
