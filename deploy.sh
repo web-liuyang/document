@@ -1,19 +1,24 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
-# 执行 sudo chmod +x ./deploy.sh 给权限
+# 确保脚本抛出遇到的错误
+set -e
 
-# 遇到错误不继续执行
-set -e  
+# 生成静态文件
+npm run build
 
-
-echo 'start'
+# 如果是发布到自定义域名
+# echo 'www.example.com' > CNAME
 
 git add .
 
 git commit -m 'update'
 
-git push gitee master
+git push origin master
 
-git push github master
+# 如果发布到 https://<USERNAME>.github.io
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
-echo 'end'
+# 如果发布到 https://<USERNAME>.github.io/<REPO>
+# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+
+cd -
