@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: LiuYnag
+heroText: LiuYang
 tagline: 个人博客与各类组件插件文档
 actionText: Let's Go →
 actionLink: /guide/
