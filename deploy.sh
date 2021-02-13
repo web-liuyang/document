@@ -4,7 +4,7 @@
 set -e
 
 # 生成静态文件
-npm run build
+# npm run build
 
 
 # 如果是发布到自定义域名
@@ -12,7 +12,7 @@ npm run build
 
 git add .
 
-git commit -m 'update'
+git commit -m '🌟 update code'
 
 git push gitee master
 

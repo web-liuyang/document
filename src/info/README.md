@@ -36,7 +36,25 @@
 8. 有自己的SDK、组件库、blogs
 ```
 
-## 最近 work
+### 轮子
+
+- 基于原生TS编写的实用工具库
+
+  [点我链接文档](/typescript/) —— [点我链接源码](https://github.com/web-liuyang/l-native-tools)
+
+- 基于VuePress编写的自动生成侧边栏plugin
+
+  [点我链接文档](/vue/vuepress/) —— [点我链接源码](https://github.com/web-liuyang/vuepress-plugin-handle-sidebar)
+
+- 基于Uniapp编写的组件库
+
+  [点我链接文档](/uniapp/components/) —— [点我链接源码](https://github.com/web-liuyang/lView-UI)
+
+- 基于Uniapp编写的SDK
+
+  [点我链接文档](/uniapp/sdk/) —— [点我链接源码](https://github.com/web-liuyang/uni-app-tools)
+
+## 最后一份工作
 
 ### 成都鑫红江汽车租赁有限公司
 

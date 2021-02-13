@@ -47,7 +47,7 @@ export function debounce(fn: Function, delay: number, immediate?: boolean): () =
 **示例**
 
 ```js
-const callback = debounce(()=>{
+const callback = $l.debounce(()=>{
 	console.log('debounce')
 },300);
 
@@ -104,7 +104,7 @@ export function throttle(fn: Function, delay: number): () => void {
 **示例**
 
 ```js
-const callback = throttle(()=>{
+const callback = $l.throttle(()=>{
   console.log('throttle')
 },1000);
 
