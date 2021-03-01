@@ -2,6 +2,8 @@
 
 ## 介绍
 
+[源码点我](https://github.com/web-liuyang/vuepress-plugin-handle-sidebar)
+
 因为vuepress官方并没有提供自动生成侧边栏的插件，所以就自己写了一个供大伙使用。
 
 Let's Go！

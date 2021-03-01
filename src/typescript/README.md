@@ -2,6 +2,8 @@
 
 此SDK基于TypeScript所编写的常用工具库。
 
+[源码点我](https://github.com/web-liuyang/l-native-tools)
+
 ## 安装
 
 ```sh
@@ -15,10 +17,10 @@ yarn add l-native-tools
 ## 使用
 
 ```tsx
-// ES6
+// ES
 import $l from "l-native-tools";
 
-// CommonJs
-const $l = require('l-native-tools');
+// CommonJS
+const $l = require("l-native-tools").default;
 ```
 

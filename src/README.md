@@ -14,7 +14,9 @@ features:
 footer: MIT Licensed | Copyright © 2020-present LiuYang
 ---
 
+[源码点我](https://github.com/web-liuyang/lView-UI)
 
+[源码看我](#DOMAINNAME/typescript)
 
 ::: tip
 # 一位00后程序员的博客

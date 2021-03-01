@@ -6,8 +6,8 @@
 - 联系电话：18284335838
 - 坐标： 成都市天府新区华阳
 - GitHub：[web-liuyang](https://github.com/web-liuyang)
-- Gitee：[web-liuyang](https://gitee.com/web-liuyang)
-- [网页版简历链接](http://liuyang.xhjrbkp.com/info/)
+- Blog：[博客主页](/)
+- [网页版简历链接](http://1.15.90.226/info/)
 
 ### 技术栈
 
@@ -15,10 +15,10 @@
 {
   var base = ['HTML5+', 'CSS3', 'JS', 'TS'];
   var frame = ['Vue', 'React', 'Umi3', 'Uniapp'];
-  var build = ['Webpack', 'Microbundle'];
+  var build = ['Webpack', 'Rollup'];
   var components = ['Antd', 'Element', 'Echarts'];
-  var map = ['BMap', 'Amap'];
-  var node = ['Express', 'Mysql'];
+  var map = ['BMap', 'AMap'];
+  var node = ['Express', 'Mysql', 'Sequelize'];
   var extra = ['WebSocket', 'Sass', 'Less', 'SEO'];
 }
 ```
@@ -29,7 +29,7 @@
 1. 熟练掌握上面技术栈Web前端技术及相关技术
 2. 具有至少2年以上web前端开发工作经验，能独立承担和推进开发工作，对前端代码优化、代码规范及安全开发有丰富的经验
 3. 熟练掌握主流前端框架或者UI库,根据需求实现控件设计、交互实现
-4. 熟悉es6以及ES2020,能使用webpack等构建工具优化打包流程，处理打包过程发生的各种问题
+4. 熟悉es2015+,能使用webpack等构建工具优化打包流程，处理打包过程发生的各种问题
 5. 了解比较主流的设计模式并实践到工作中
 6. 能够独立负责前端项目、业务、以及各种比较复杂的tree型结构与逻辑
 7. 项目中实行各种前端组件化，具有良好的OOP编程思想
@@ -53,6 +53,14 @@
 - 基于Uniapp编写的SDK
 
   [点我链接文档](/uniapp/sdk/) —— [点我链接源码](https://github.com/web-liuyang/uni-app-tools)
+
+- 基于React编写的组件库
+
+  [点我链接文档](/react/components/) —— [点我链接源码](https://github.com/web-liuyang/l-react-ui)
+
+- 基于React编写的hooks
+
+  [点我链接文档](/react/hooks/) —— [点我链接源码](https://github.com/web-liuyang/l-react-hooks)
 
 ## 最后一份工作
 
@@ -148,7 +156,6 @@
   [
     "负责H5在APP中的实现",
     "调用原生能力进行功能调用",
-    "scheme",
     "用户信息统计"
   ]
   ```

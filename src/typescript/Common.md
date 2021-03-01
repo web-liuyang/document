@@ -60,11 +60,11 @@ $l.typeOf(origin3);
 export function isEmpty(origin?: any): boolean {
   switch (typeOf(origin)) {
     case 'string':
-      return !!origin;
+      return !origin;
     case 'number':
-      return !!origin;
+      return !origin;
     case 'boolean':
-      return origin;
+      return !origin;
     case 'object':
       for (const key in origin) return !key;
       return true;
@@ -199,5 +199,42 @@ const origin = {a:1,b:2};
 
 $l.deepClone(origin);
 // => {a:1,b:2}
+```
+
+
+
+## $l.getRandomColor
+
+<CodeBlocks>$l.getRandomColor(transparency)</CodeBlocks>
+
+**随机RGBA颜色**
+
+随机RGBA颜色，可用于颜色赋值
+
+**源码**
+
+```tsx
+/**
+ * @description 随机颜色获取
+ * @param {number} [transparency=1] - 透明度
+ * @return {string} rgba颜色
+ */
+export function getRandomColor(transparency: number = 1): string {
+  const { floor, random } = Math;
+  
+  const r = floor(random() * 255);
+  const g = floor(random() * 255);
+  const b = floor(random() * 255);
+  const color = `rgba(${r},${g},${b},${transparency})`;
+
+  return color;
+}
+```
+
+**示例**
+
+```tsx
+$l.getRandomColor(0.5);
+// => rgba(200,200,200,0.5)
 ```
 

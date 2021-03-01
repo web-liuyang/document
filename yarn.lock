@@ -2243,11 +2243,6 @@ colorette@^1.2.1:
   resolved "https://registry.npm.taobao.org/colorette/download/colorette-1.2.1.tgz?cache=0&sync_timestamp=1593955826637&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcolorette%2Fdownload%2Fcolorette-1.2.1.tgz#4d0b921325c14faf92633086a536db6e89564b1b"
   integrity sha1-TQuSEyXBT6+SYzCGpTbbbolWSxs=
 
-colors@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.npm.taobao.org/colors/download/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
-  integrity sha1-xQSRR51MG9rtLJztMs98fcI2D3g=
-
 combined-stream@^1.0.6, combined-stream@~1.0.6:
   version "1.0.8"
   resolved "https://registry.npm.taobao.org/combined-stream/download/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
@@ -4817,6 +4812,11 @@ markdown-it-emoji@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npm.taobao.org/markdown-it-emoji/download/markdown-it-emoji-1.4.0.tgz#9bee0e9a990a963ba96df6980c4fddb05dfb4dcc"
   integrity sha1-m+4OmpkKljupbfaYDE/dsF37Tcw=
+
+markdown-it-for-inline@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.npm.taobao.org/markdown-it-for-inline/download/markdown-it-for-inline-0.1.1.tgz#435f2316f5b5e68e1450cfa2242f2b8d59adc75f"
+  integrity sha1-Q18jFvW15o4UUM+iJC8rjVmtx18=
 
 markdown-it-table-of-contents@^0.4.0:
   version "0.4.4"
@@ -7554,13 +7554,6 @@ vuepress-html-webpack-plugin@^3.2.0:
     toposort "^1.0.0"
     util.promisify "1.0.0"
 
-vuepress-plugin-auto-sidebar@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.npm.taobao.org/vuepress-plugin-auto-sidebar/download/vuepress-plugin-auto-sidebar-1.5.0.tgz#fc11b32f5e7976394bab01edd68cd602b1c0cefe"
-  integrity sha1-/BGzL155djlLqwHt1ozWArHAzv4=
-  dependencies:
-    colors "^1.4.0"
-
 vuepress-plugin-code-copy@^1.0.6:
   version "1.0.6"
   resolved "https://registry.npm.taobao.org/vuepress-plugin-code-copy/download/vuepress-plugin-code-copy-1.0.6.tgz#6431dab764b48b5b203e4936d98b1943651ce4ad"
@@ -7574,10 +7567,10 @@ vuepress-plugin-container@^2.0.2:
     "@vuepress/shared-utils" "^1.2.0"
     markdown-it-container "^2.0.0"
 
-vuepress-plugin-handle-sidebar@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/vuepress-plugin-handle-sidebar/-/vuepress-plugin-handle-sidebar-1.0.0.tgz#ed8764ed1be6a1526c110ef21734996e14e317a8"
-  integrity sha512-FDBKgNQ6aA1lRsCdLCpPCjqfZbJhCAmhoB/qbI9flM2tfyGUyADTbqVR52wmG2naE5VnK1AftSqdqFUP5zw97w==
+vuepress-plugin-handle-sidebar@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-handle-sidebar/download/vuepress-plugin-handle-sidebar-1.0.1.tgz#d1cd3aeb1d08f2bb1e7d4cec6c67594ed5623a7f"
+  integrity sha1-0c066x0I8rsefUzsbGdZTtViOn8=
 
 vuepress-plugin-smooth-scroll@^0.0.3:
   version "0.0.3"

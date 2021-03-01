@@ -6,8 +6,8 @@
 - 联系电话：18284335838
 - 坐标： 成都市天府新区华阳
 - GitHub：[web-liuyang](https://github.com/web-liuyang)
-- Gitee：[web-liuyang](https://gitee.com/web-liuyang)
-- [网页版简历链接](http://liuyang.xhjrbkp.com/info/)
+- Blog：[博客主页](https://1.15.90.226)
+- [网页版简历链接](https://1.15.90.226/info/)
 
 ### 技术栈
 
@@ -15,10 +15,10 @@
 {
   var base = ['HTML5+', 'CSS3', 'JS', 'TS'];
   var frame = ['Vue', 'React', 'Umi3', 'Uniapp'];
-  var build = ['Webpack', 'Microbundle'];
+  var build = ['Webpack', 'Rollup'];
   var components = ['Antd', 'Element', 'Echarts'];
-  var map = ['BMap', 'Amap'];
-  var node = ['Express', 'Mysql'];
+  var map = ['BMap', 'AMap'];
+  var node = ['Express', 'Mysql', 'Sequelize'];
   var extra = ['WebSocket', 'Sass', 'Less', 'SEO'];
 }
 ```
@@ -27,7 +27,7 @@
 
 ```tsx
 1. 熟练掌握上面技术栈Web前端技术及相关技术
-2. 具有至少2年以上web前端开发工作经验，能独立承担和推进开发工作，对前端代码优化、代码规范及安全开发有丰富的经验
+2. 具有2年以上web前端开发经验，能独立承担和推进开发工作，对前端代码优化、代码规范及安全开发有丰富的经验
 3. 熟练掌握主流前端框架或者UI库,根据需求实现控件设计、交互实现
 4. 熟悉ES2015+,能使用webpack等构建工具优化打包流程，处理打包过程发生的各种问题
 5. 了解比较主流的设计模式并实践到工作中
@@ -40,19 +40,27 @@
 
 - 基于原生TS编写的实用工具库
 
-  [点我链接文档](http://liuyang.xhjrbkp.com/typescript/) —— [点我链接源码](https://github.com/web-liuyang/l-native-tools)
+  [点我链接文档](https://1.15.90.226/typescript/) —— [点我链接源码](https://github.com/web-liuyang/l-native-tools)
 
 - 基于VuePress编写的自动生成侧边栏plugin
 
-  [点我链接文档](http://liuyang.xhjrbkp.com/vue/vuepress/) —— [点我链接源码](https://github.com/web-liuyang/vuepress-plugin-handle-sidebar)
+  [点我链接文档](https://1.15.90.226/vue/vuepress/) —— [点我链接源码](https://github.com/web-liuyang/vuepress-plugin-handle-sidebar)
 
 - 基于Uniapp编写的组件库
 
-  [点我链接文档](http://liuyang.xhjrbkp.com/uniapp/components/) —— [点我链接源码](https://github.com/web-liuyang/lView-UI)
+  [点我链接文档](https://1.15.90.226/uniapp/components/) —— [点我链接源码](https://github.com/web-liuyang/lView-UI)
 
 - 基于Uniapp编写的SDK
 
-  [点我链接文档](http://liuyang.xhjrbkp.com/uniapp/sdk/) —— [点我链接源码](https://github.com/web-liuyang/uni-app-tools)
+  [点我链接文档](https://1.15.90.226/uniapp/sdk/) —— [点我链接源码](https://github.com/web-liuyang/uni-app-tools)
+
+- 基于React编写的组件库
+
+  [点我链接文档](https://1.15.90.226/react/components/) —— [点我链接源码](https://github.com/web-liuyang/l-react-ui)
+
+- 基于React编写的hooks
+
+  [点我链接文档](https://1.15.90.226/react/hooks/) —— [点我链接源码](https://github.com/web-liuyang/l-react-hooks)
 
 ## 最后一份工作
 

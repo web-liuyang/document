@@ -5,10 +5,11 @@
   "license": "MIT",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.8.0",
+    "markdown-it-for-inline": "^0.1.1",
+    "moment": "^2.29.1",
     "vuepress": "^1.6.0",
-    "vuepress-plugin-handle-sidebar": "^1.0.0",
     "vuepress-plugin-code-copy": "^1.0.6",
-    "moment": "^2.29.1"
+    "vuepress-plugin-handle-sidebar": "^1.0.1"
   },
   "scripts": {
     "start": "vuepress dev src",
