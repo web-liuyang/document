@@ -5,13 +5,18 @@
 </template>
 
 <script>
+// import { session, cookie, local } from 'l-storage';
+// import { encode, decode } from 'js-base64';
+
+// const {session} = require('l-storage');
+
 export default {
   name: 'CodeBlocks',
   data() {
     return {};
   },
   created() {
-    // console.log('process', definitions);
+    // console.log(session)
   },
 };
 </script>

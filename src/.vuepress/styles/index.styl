@@ -1,9 +1,25 @@
-.page .theme-default-content{
+.page .theme-default-content {
     max-width: 1200px !important;;
 }
-.page-nav{
+.page-nav {
     max-width: 1200px !important;
 }
-.page-edit{
+.page-edit {
     max-width: 1200px !important;
 }
+
+table {
+    table-layout: fixed;
+    display: table;
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    table {
+        display: block!important;
+    }
+    table tbody tr td, table thead tr th {
+        white-space: nowrap;
+    }
+}
+

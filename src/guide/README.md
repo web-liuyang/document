@@ -5,9 +5,11 @@
 1. [uniapp 的插件文档](/uniapp/sdk/)
 2. [uniapp 的组件文档](/uniapp/components/)
 3. [Vuepress 自动生成目录插件](/vue/vuepress/)
-4. [typescript 常用工具库](/typescript/)
-5. [react 组件库](/react/components/)
-6. [react hooks](/react/hooks/)
+4. [typescript 常用工具库](/typescript/l-native-tools)
+5. [typescript 浏览器存储方案](/typescript/l-browser-storage)
+6. [react 组件库](/react/components/)
+7. [react hooks](/react/hooks/)
+8. [前端开发规范](/standard/)
 
 ::: tip 温馨提示
 

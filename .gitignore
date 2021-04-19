@@ -1,8 +1,8 @@
 .DS_Store
 
 /unpackage
-
 /node_modules
+/docs
 
 # local env files
 .env.local
@@ -21,3 +21,7 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+
+package-lock.json
+yarn.lock

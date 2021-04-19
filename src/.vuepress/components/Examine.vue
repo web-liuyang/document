@@ -1,10 +1,22 @@
 <template>
-  <div v-if="show" ref="modal" class="modal-box" :style="{ top, left }">
+  <div
+    v-if="show"
+    ref="modal"
+    class="modal-box"
+    :style="{
+      top,
+      left
+    }"
+  >
     <div class="modal">
-      <p>考个简单的问题：我叫什么名字?</p>
+      <p>
+        考个简单的问题：我叫什么名字?
+      </p>
       <div class="result-input">
         <input class="input" type="text" v-model="name" />
-        <button class="btn" @click="handleClickVerify">确定</button>
+        <button class="btn" @click="handleClickVerify">
+          确定
+        </button>
       </div>
     </div>
   </div>
@@ -17,7 +29,7 @@ export default {
       top: 0,
       left: 0,
       name: '',
-      show: true,
+      show: true
     };
   },
   created() {},
@@ -49,8 +61,8 @@ export default {
     },
     removeScroll() {
       document.body.style.overflow = 'hidden';
-    },
-  },
+    }
+  }
 };
 </script>
 <style>

@@ -11,13 +11,17 @@ features:
   details: Vue、React、uniapp各种不常见的组件
 - title: 个人插件
   details: Vue、React、uniapp各种不常见的插件
-footer: MIT Licensed | Copyright © 2020-present LiuYang
+footer: MIT Licensed | Copyright 2021-present LiuYang 蜀ICP备2021005160号
 ---
 
-[源码点我](https://github.com/web-liuyang/lView-UI)
 
-[源码看我](#DOMAINNAME/typescript)
+<GitHub />
+
+
+<!-- ::: tip
+# 一位00后程序员的博客
+::: -->
 
 ::: tip
-# 一位00后程序员的博客
+# 目标成为架构师
 :::
