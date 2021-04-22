@@ -5,15 +5,20 @@ const resolve = (pathname) => {
   return path.resolve(__dirname, '..', pathname);
 };
 
-/*
-
- */
-
 module.exports = {
   dest: process.cwd() + '/docs',
   title: 'LiuYang',
   description: '刘洋的个人博客',
   head: [
+    [
+      'link',
+      {
+        rel: 'icon',
+        sizes: '32x32',
+        type: 'image/png',
+        href: '/favicon.png',
+      },
+    ],
     [
       'script',
       null,
@@ -110,83 +115,6 @@ module.exports = {
   configureWebpack: (config) => {
     config.resolve.alias['@api'] = resolve('api');
     config.resolve.alias['@utils'] = resolve('utils');
-    // console.log(process.cwd());
-    // console.log(__dirname);
-    // console.log(__filename);
-
-    // console.log(resolve('api'));
   },
-  markdown: {
-    extendMarkdown: (md) => {
-      // console.log(md.parse('[源码点我]'))
-      // const tokens = md.parse('[源码点我](http)')
-      // console.log(tokens)
-      // console.log(tokens[0].children[0].attrs)
-      // console.log(md.core.process.toString())
-      // console.log(md.ruler)
-      // function myToken(tokens, idx, options, env, self) {
-      //   console.log(idx)
-      //   setInterval(() => {
-      //     console.log('进入了哈')
-      //   }, 1000);
-      //   return '';
-      // };
-      // md.renderer.rules['my_token'] = myToken;
-      // console.log(md.renderer.rules);
-      // md.renderer.ruler.after('text', 'my_rule', function replace(state) {
-      //   //...
-      //   console.log('123')
-      // });
-      // const linkOpen = md.renderer.rules.link_open;
-      // console.log('123123123');
-      // console.log(linkOpen.toString());
-      // md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
-      // console.log(idx)
-      // const { relativePath } = env;
-      // console.log(tokens)
-      // console.log(token)
-      // const token = tokens[idx];
-      // const hrefIndex = token.attrIndex('href');
-      // if (hrefIndex >= 0) {
-      //   const link = token.attrs[hrefIndex];
-      //   const href = link[1];
-      //   const valid = /#DOMAINNAME/;
-      //   if(valid.test(href)){
-      //     console.log('成功')
-      //     tokens[idx].attrs[hrefIndex][1] = href.replace(valid,'https://1.15.90.226');
-      //     console.log(tokens[idx].attrs[hrefIndex])
-      //     // console.log(linkOpen.toString())
-      //   }
-      // }
-      // linkOpen(tokens, idx, options, env, self)
-      // const { relativePath } = env;
-      // const token = tokens[idx];
-      // const hrefIndex = token.attrIndex('href');
-      // if (hrefIndex >= 0) {
-      //   const link = token.attrs[hrefIndex];
-      //   const href = link[1];
-      //   const isExternal = /^https?:/.test(href);
-      //   const isSourceLink = /(\/|\.md|\.html)(#.*)?$/.test(href);
-      //   const valid = /#DOMAINNAME/;
-      //   if (valid.test(href)) {
-      //     console.log('成功');
-      //     tokens[idx].attrs[hrefIndex][1] = href.replace(valid, 'https://1.15.90.226');
-      //     console.log(tokens[idx].attrs[hrefIndex]);
-      //   }
-      //   if (isExternal) {
-      //     Object.entries(externalAttrs).forEach(([key, val]) => {
-      //       token.attrSet(key, val);
-      //     });
-      //     if (/_blank/i.test(externalAttrs['target'])) {
-      //       hasOpenExternalLink = true;
-      //     }
-      //   } else if (isSourceLink) {
-      //     hasOpenRouterLink = true;
-      //     tokens[idx] = toRouterLink(token, link, relativePath);
-      //   }
-      // }
-      // return self.renderToken(tokens, idx, options);
-      // };
-    },
-  },
+  markdown: {},
 };
