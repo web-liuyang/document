@@ -108,9 +108,10 @@ indent_style = tab
 ```json
 // package.json
 {
-  "scripts": {
-    "prepare": "husky install && husky add .husky/pre-commit 'yarn pre-commit' ",
-    "pre-commit": "lint-staged"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.{js,jsx,less,json}": [
@@ -123,7 +124,7 @@ indent_style = tab
     ]
   },
   "devDependencies": {
-    "husky": "^6.0.0",
+    "husky": "4.3.8",
     "lint-staged": "^10.5.4",
     "pinst": "^2.1.6",
     "prettier": "^2.2.1",
