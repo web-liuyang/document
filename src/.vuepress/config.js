@@ -67,6 +67,7 @@ module.exports = {
         items: [
           { text: 'Components', link: '/react/components/' },
           { text: 'Hooks', link: '/react/hooks/' },
+          { text: 'Problem', link: '/react/problem/' },
         ],
       },
       {
