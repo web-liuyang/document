@@ -174,3 +174,16 @@ module.exports = {
   }
 }
 ```
+
+
+## JSCpd
+
+```json
+// package.json
+{
+  ...,
+  "scripts": {
+    "duplicate:code": "jscpd --ignore **/node_modules/**",
+  },
+}
+```
