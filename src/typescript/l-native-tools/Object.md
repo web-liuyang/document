@@ -1,8 +1,8 @@
 # Object
 
-## $l.getOwnKeys
+## getOwnKeys
 
-<CodeBlocks>$l.getOwnKeys(origin)</CodeBlocks>
+<CodeBlocks>getOwnKeys(origin)</CodeBlocks>
 
 **对象Key值获取**
 
@@ -30,16 +30,16 @@ export function getOwnKeys(origin: object | any[]): PropertyKey[] {
 const obj = {a:1,b:2,c:3},
       arr = [];
 
-$l.getOwnKeys(obj);
+getOwnKeys(obj);
 // => [a,b,c]
 
-$l.getOwnKeys(arr);
+getOwnKeys(arr);
 // => [length]
 ```
 
-## $l.isDeepObjectEqual
+## isDeepObjectEqual
 
-<CodeBlocks>$l.isDeepObjectEqual(obj1,obj2)</CodeBlocks>
+<CodeBlocks>isDeepObjectEqual(obj1,obj2)</CodeBlocks>
 
 **对象深度比较**
 
@@ -91,9 +91,9 @@ const obj1 = {a: 1, b: 2, c: 3},
       obj2 = {a: 1, b: 2, c: 3},
       obj3 = {a: 1, b: 2, c: 3, d: 4}
 
-$l.isDeepObjectEqual(obj1, obj2);
+isDeepObjectEqual(obj1, obj2);
 // => true
 
-$l.isDeepObjectEqual(obj1, obj3);
+isDeepObjectEqual(obj1, obj3);
 // => false
 ```

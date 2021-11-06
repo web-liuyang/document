@@ -1,8 +1,8 @@
 # Number
 
-## $l.currency
+## currency
 
-<CodeBlocks>$l.currency(method, args)</CodeBlocks>
+<CodeBlocks>currency(method, args)</CodeBlocks>
 
 **金额运算**
 
@@ -46,24 +46,24 @@ export function currency(method: '+' | '-' | '*' | '/', numberArr: number[]): nu
 const a = 5,
       b = 5;
 
-$l.currency('+',[a,b]);
+currency('+',[a,b]);
 // => 10
 
-$l.currency('-',[a,b]);
+currency('-',[a,b]);
 // => 0
 
-$l.currency('*',[a,b]);
+currency('*',[a,b]);
 // => 25
 
-$l.currency('/',[a,b]);
+currency('/',[a,b]);
 // => 1
 ```
 
 
 
-## $l.random
+## random
 
-<CodeBlocks>$l.random(min,max)</CodeBlocks>
+<CodeBlocks>random(min,max)</CodeBlocks>
 
 **获取两个数值之间的整数**
 
@@ -89,13 +89,13 @@ export function random(min: number, max: number): number {
 const min = 0,
       max = 10;
 
-$l.random(min,max);
+random(min,max);
 // => 0
 
-$l.random(min,max);
+random(min,max);
 // => 5
 
-$l.random(min,max);
+random(min,max);
 // => 10
 ```
 

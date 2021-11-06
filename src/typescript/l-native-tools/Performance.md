@@ -1,8 +1,8 @@
 # Performance
 
-## $l.debounce
+## debounce
 
-<CodeBlocks>$l.debounce(fn,delay,immediate)</CodeBlocks>
+<CodeBlocks>debounce(fn,delay,immediate)</CodeBlocks>
 
 **防抖**
 
@@ -47,7 +47,7 @@ export function debounce(fn: Function, delay: number, immediate?: boolean): () =
 **示例**
 
 ```js
-const callback = $l.debounce(()=>{
+const callback = debounce(()=>{
 	console.log('debounce')
 },300);
 
@@ -56,9 +56,9 @@ addEventListener('scroll',callback,false);
 
 
 
-## $l.throttle
+## throttle
 
-<CodeBlocks>$l.throttle(fn,delay)</CodeBlocks>
+<CodeBlocks>throttle(fn,delay)</CodeBlocks>
 
 **节流**
 
@@ -104,7 +104,7 @@ export function throttle(fn: Function, delay: number): () => void {
 **示例**
 
 ```js
-const callback = $l.throttle(()=>{
+const callback = throttle(()=>{
   console.log('throttle')
 },1000);
 

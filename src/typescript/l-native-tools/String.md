@@ -1,8 +1,8 @@
 # String
 
-## $l.firstUpperCase
+## firstUpperCase
 
-<CodeBlocks>$l.firstUpperCase(str)</CodeBlocks>
+<CodeBlocks>firstUpperCase(str)</CodeBlocks>
 
 **将第一个字母转换成大写**
 
@@ -27,9 +27,9 @@ export function firstUpperCase(str: string): string {
 ```js
 const str = ""
 
-$l.getOwnKeys(obj);
+getOwnKeys(obj);
 // => [a,b,c]
 
-$l.getOwnKeys(arr);
+getOwnKeys(arr);
 // => [length]
 ```

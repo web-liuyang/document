@@ -1,8 +1,8 @@
 # Common
 
-## $l.typeOf
+## typeOf
 
-<CodeBlocks>$l.typeOf(origin)</CodeBlocks>
+<CodeBlocks>typeOf(origin)</CodeBlocks>
 
 **类型检查**
 
@@ -27,23 +27,23 @@ export function typeOf(origin?: any): Type & string {
 
 ```js
 const origin1 = {};
-$l.typeOf(origin1);
+typeOf(origin1);
 // => object;
 
 const origin2 = [];
-$l.typeOf(origin2);
+typeOf(origin2);
 // => array;
 
 const origin3 = function(){};
-$l.typeOf(origin3);
+typeOf(origin3);
 // => function;
 ```
 
 
 
-## $l.isEmpty
+## isEmpty
 
-<CodeBlocks>$l.isEmpty(origin)</CodeBlocks>
+<CodeBlocks>isEmpty(origin)</CodeBlocks>
 
 **判断是否为空**
 
@@ -84,27 +84,27 @@ export function isEmpty(origin?: any): boolean {
 
 ```tsx
 const origin1 = [];
-$l.isEmpty(origin1);
+isEmpty(origin1);
 // => true
 
 const origin2 = [1];
-$l.isEmpty(origin2);
+isEmpty(origin2);
 // => false
 
 const origin3 = {};
-$l.isEmpty(origin3);
+isEmpty(origin3);
 // => true
 
 const origin4 = {name:'liuyang'};
-$l.isEmpty(origin4);
+isEmpty(origin4);
 // => false
 ```
 
 
 
-## $l.straightDistance
+## straightDistance
 
-<CodeBlocks>$l.straightDistance(origin,target)</CodeBlocks>
+<CodeBlocks>straightDistance(origin,target)</CodeBlocks>
 
 **直线距离计算**
 
@@ -154,15 +154,15 @@ export function straightDistance(origin: string, target: string): number {
 const origin1 = '104.061388,30.505552';
 const target1 = '103.923298,30.636125';
 
-$l.straightDistance(origin1,target1);
+straightDistance(origin1,target1);
 // => 19658
 ```
 
 
 
-## $l.deepClone
+## deepClone
 
-<CodeBlocks>$l.deepClone(origin)</CodeBlocks>
+<CodeBlocks>deepClone(origin)</CodeBlocks>
 
 **深拷贝**
 
@@ -197,15 +197,15 @@ export function deepClone<T = {} | any[]>(origin: T): T {
 ```tsx
 const origin = {a:1,b:2};
 
-$l.deepClone(origin);
+deepClone(origin);
 // => {a:1,b:2}
 ```
 
 
 
-## $l.getRandomColor
+## getRandomColor
 
-<CodeBlocks>$l.getRandomColor(transparency)</CodeBlocks>
+<CodeBlocks>getRandomColor(transparency)</CodeBlocks>
 
 **随机RGBA颜色**
 
@@ -234,7 +234,7 @@ export function getRandomColor(transparency: number = 1): string {
 **示例**
 
 ```tsx
-$l.getRandomColor(0.5);
+getRandomColor(0.5);
 // => rgba(200,200,200,0.5)
 ```
 

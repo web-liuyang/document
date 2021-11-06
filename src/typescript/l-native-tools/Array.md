@@ -1,8 +1,8 @@
-# Array
+# array
 
-## $l.flatten
+## flatten
 
-<CodeBlocks>$l.flatten(origin, target)</CodeBlocks>
+<CodeBlocks>flatten(origin, target)</CodeBlocks>
 
 **数组扁平化**
 
@@ -34,15 +34,15 @@ function flatten(origin: any[], target: any[] = []): any[] {
 ```js
 const origin = [1,2,3,[4,5,6],[7,[8,[9]]]];
 
-$l.flatten(origin);
+flatten(origin);
 // => [1,2,3,4,5,6,7,8,9];
 ```
 
 
 
-## $l.unique
+## unique
 
-<CodeBlocks>$l.unique(origin)</CodeBlocks>
+<CodeBlocks>unique(origin)</CodeBlocks>
 
 **数组去重**
 
@@ -69,7 +69,7 @@ export function unique(origin: any[]): any[] {
 ```tsx
 const origin = [1,1,2,2,3,3,3];
 
-$l.unique(origin);
+unique(origin);
 // => [1,2,3];
 ```
 
