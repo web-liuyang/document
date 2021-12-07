@@ -1,6 +1,6 @@
 # 指南
 
-目前正在编辑：
+导航：
 
 1. [uniapp 的插件文档](/uniapp/sdk/)
 2. [uniapp 的组件文档](/uniapp/components/)
@@ -9,7 +9,10 @@
 5. [typescript 浏览器存储方案](/typescript/l-browser-storage)
 6. [react 组件库](/react/components/)
 7. [react hooks](/react/hooks/)
-8. [前端开发规范](/standard/)
+8. [linux package](/linux/package/)
+9. [linux command](/linux/command/)
+10. [shell](/linux/shell/)
+11. [前端开发规范](/standard/)
 
 ::: tip 温馨提示
 

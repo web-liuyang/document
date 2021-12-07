@@ -51,6 +51,15 @@ module.exports = {
       // { text: '个人简历', link: '/info/' },
       { text: "Node", link: "/node/" },
       {
+        text: "Linux",
+        ariaLabel: "Linux Menu",
+        items: [
+          { text: "package", link: "/linux/package/" },
+          { text: "command", link: "/linux/command/" },
+          { text: "shell", link: "/linux/shell/" },
+        ],
+      },
+      {
         text: "TypeScript",
         ariaLabel: "TypeScript Menu",
         items: [
