@@ -1,8 +1,8 @@
-import axios from './request';
+import axios from "./request";
 
 const URL = {
-  GET_USERINFO: '',
-  GET_REPOS: '/repos',
+  GET_USERINFO: "",
+  GET_REPOS: "/repos",
 };
 
 /**

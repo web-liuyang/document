@@ -1,32 +1,29 @@
-import Axios from 'axios';
+import Axios from "axios";
 
 const axios = Axios.create({
-  baseURL: 'https://api.github.com/users/web-liuyang',
+  baseURL: "https://api.github.com/users/web-liuyang",
   timeout: 10000,
 });
 
 axios.interceptors.request.use(
-  (config) => {
-    // console.log('config', config);
+  config => {
     return config;
   },
-  (error) => {
+  error => {
     console.error(error);
   }
 );
 
 axios.interceptors.response.use(
-  (res) => {
-    // console.log('response', res);
-
+  res => {
     if (res.status !== 200) {
-      console.error('响应错误：' + res,);
+      console.error("响应错误：" + res);
       return;
     }
 
     return res;
   },
-  (error) => {
+  error => {
     console.error(error);
   }
 );
