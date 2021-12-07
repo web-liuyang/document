@@ -26,7 +26,7 @@ export default {
       Stars: 0,
     };
   },
-  created() {
+  mounted() {
     const userinfo = session.get("userinfo", { decode: true });
     const repos = session.get("repos", { decode: true });
     if (!userinfo || !repos) {
@@ -35,7 +35,6 @@ export default {
       this.getGitHubData();
     }
   },
-
   methods: {
     init() {
       this.getUserinfo();
