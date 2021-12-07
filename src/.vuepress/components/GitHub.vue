@@ -14,7 +14,6 @@
 import { session } from "l-browser-storage";
 import { user } from "@api";
 import { splitRepos } from "@utils";
-
 import Gauge from "./Gauge";
 
 export default {
@@ -27,43 +26,75 @@ export default {
       Stars: 0,
     };
   },
-  async mounted() {
+  created() {
     const userinfo = session.get("userinfo", { decode: true });
     const repos = session.get("repos", { decode: true });
     if (!userinfo || !repos) {
-      await this.init();
+      this.init();
+    } else {
+      this.getGitHubData();
     }
-    this.getGitHubData();
   },
+
   methods: {
-    async init() {
-      await this.getUserinfo();
-      await this.getRepos();
+    init() {
+      this.getUserinfo();
+      this.getRepos();
     },
 
-    async getUserinfo() {
-      const res = await user.getUserinfo();
-      if (!res) return;
-      session.set("userinfo", res.data, { encode: true });
+    getUserinfo() {
+      user
+        .getUserinfo()
+        .then(res => {
+          const data = res.data;
+          session.set("userinfo", data, { encode: true });
+          this.setGitHubData({
+            Followers: data.followers,
+            Repositories: this.Repositories,
+            Forks: this.Forks,
+            Stars: this.Stars,
+          });
+        })
+        .catch(err => {
+          session.set("userinfo", null, { encode: true });
+          this.setGitHubData({
+            Followers: "error",
+            Repositories: this.Repositories,
+            Forks: this.Forks,
+            Stars: this.Stars,
+          });
+        });
     },
 
-    async getRepos() {
-      const res = await user.getRepos();
-      if (!res) return;
-      session.set("repos", res.data, { encode: true });
+    getRepos() {
+      user
+        .getRepos()
+        .then(res => {
+          const data = res.data;
+          const repos = splitRepos(data)[0];
+          session.set("repos", data, { encode: true });
+          this.setGitHubData({
+            Followers: this.Followers,
+            Repositories: repos.length,
+            Forks: repos.reduce((prev, item, index, arr) => prev + item.forks_count, 0),
+            Stars: repos.reduce((prev, item, index, arr) => prev + item.stargazers_count, 0),
+          });
+        })
+        .catch(err => {
+          console.log("getRepos-error", err);
+          session.set("repos", null, { encode: true });
+          this.setGitHubData({
+            Followers: this.Followers,
+            Repositories: repos.length,
+            Forks: repos.reduce((prev, item, index, arr) => prev + item.forks_count, 0),
+            Stars: repos.reduce((prev, item, index, arr) => prev + item.stargazers_count, 0),
+          });
+        });
     },
+
     getGitHubData() {
       const userinfo = session.get("userinfo", { decode: true });
       let repos = session.get("repos", { decode: true });
-
-      if (!userinfo || !repos) {
-        return this.setGitHubData({
-          Followers: "error",
-          Repositories: "error",
-          Forks: "error",
-          Stars: "error",
-        });
-      }
 
       repos = splitRepos(repos)[0];
 
