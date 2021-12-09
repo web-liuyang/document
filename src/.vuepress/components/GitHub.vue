@@ -18,6 +18,9 @@ import Gauge from "./Gauge";
 
 export default {
   name: "GitHub",
+  components: {
+    Gauge,
+  },
   data() {
     return {
       Followers: 0,
@@ -112,9 +115,6 @@ export default {
       this.Forks = Forks;
       this.Stars = Stars;
     },
-  },
-  components: {
-    Gauge,
   },
 };
 </script>
