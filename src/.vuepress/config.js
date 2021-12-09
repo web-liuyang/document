@@ -128,19 +128,19 @@ module.exports = {
   configureWebpack: config => {
     config.resolve.alias["@api"] = resolve("api");
     config.resolve.alias["@utils"] = resolve("utils");
-    config.plugins.push(
-      ...[
-        new CompressionWebpackPlugin({
-          algorithm: "gzip",
-          /** 匹配的文件 */
-          test: /\.js$|\.css$\.html$|/,
-          /** 超过10kb 压缩 */
-          threshold: 1024,
-          /** 不删除原文件 */
-          deleteOriginalAssets: false,
-        }),
-      ]
-    );
+    // config.plugins.push(
+    //   ...[
+    //     new CompressionWebpackPlugin({
+    //       algorithm: "gzip",
+    //       /** 匹配的文件 */
+    //       test: /\.js$|\.css$\.html$|/,
+    //       /** 超过10kb 压缩 */
+    //       threshold: 1024,
+    //       /** 不删除原文件 */
+    //       deleteOriginalAssets: false,
+    //     }),
+    //   ]
+    // );
   },
   markdown: {},
 };

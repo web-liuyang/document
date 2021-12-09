@@ -13,7 +13,7 @@ features:
     details: Vue、React、uniapp各种不常见的插件
 ---
 
-<!-- <GitHub /> -->
+<GitHub />
 
 <!-- ::: tip
 # 一位00后程序员的博客

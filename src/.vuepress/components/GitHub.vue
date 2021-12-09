@@ -30,7 +30,6 @@ export default {
     };
   },
   mounted() {
-    console.log("mounted");
     const userinfo = session.get("userinfo", { decode: true });
     const repos = session.get("repos", { decode: true });
     if (!userinfo || !repos) {
