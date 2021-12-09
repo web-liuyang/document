@@ -18,6 +18,9 @@ import Gauge from "./Gauge";
 
 export default {
   name: "GitHub",
+  components: {
+    Gauge,
+  },
   data() {
     return {
       Followers: 0,
@@ -27,6 +30,7 @@ export default {
     };
   },
   mounted() {
+    console.log("mounted");
     const userinfo = session.get("userinfo", { decode: true });
     const repos = session.get("repos", { decode: true });
     if (!userinfo || !repos) {
@@ -35,6 +39,7 @@ export default {
       this.getGitHubData();
     }
   },
+
   methods: {
     init() {
       this.getUserinfo();
@@ -110,9 +115,6 @@ export default {
       this.Forks = Forks;
       this.Stars = Stars;
     },
-  },
-  components: {
-    Gauge,
   },
 };
 </script>
