@@ -135,7 +135,7 @@ module.exports = {
           /** 匹配的文件 */
           test: /\.js$|\.css$\.html$|/,
           /** 超过10kb 压缩 */
-          threshold: 10240,
+          threshold: 1024,
           /** 不删除原文件 */
           deleteOriginalAssets: false,
         }),
