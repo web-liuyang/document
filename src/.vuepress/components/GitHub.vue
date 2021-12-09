@@ -80,13 +80,12 @@ export default {
           });
         })
         .catch(err => {
-          console.log("getRepos-error", err);
           session.set("repos", null, { encode: true });
           this.setGitHubData({
             Followers: this.Followers,
-            Repositories: repos.length,
-            Forks: repos.reduce((prev, item, index, arr) => prev + item.forks_count, 0),
-            Stars: repos.reduce((prev, item, index, arr) => prev + item.stargazers_count, 0),
+            Repositories: "error",
+            Forks: "error",
+            Stars: "error",
           });
         });
     },

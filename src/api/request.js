@@ -9,23 +9,18 @@ axios.interceptors.request.use(
   config => {
     return config;
   },
-  error => {
-    console.error(error);
-  }
+  error => Promise.reject(error)
 );
 
 axios.interceptors.response.use(
   res => {
     if (res.status !== 200) {
-      console.error("响应错误：" + res);
-      return;
+      return Promise.reject(res);
     }
 
-    return res;
+    return Promise.resolve(res);
   },
-  error => {
-    console.error(error);
-  }
+  error => Promise.reject(error)
 );
 
 export default axios;

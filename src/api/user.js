@@ -20,7 +20,7 @@ const getUserinfo = async () => {
  */
 const getRepos = async () => {
   const res = await axios.get(URL.GET_REPOS);
-
+  console.log(res);
   return res;
 };
 
