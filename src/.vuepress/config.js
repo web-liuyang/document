@@ -70,7 +70,10 @@ module.exports = {
       {
         text: "Vue",
         ariaLabel: "Vue Menu",
-        items: [{ text: "Vuepress", link: "/vue/vuepress/" }],
+        items: [
+          { text: "Vuepress", link: "/vue/vuepress/" },
+          { text: "Vue源码", link: "/vue/custom-vue/" },
+        ],
       },
       {
         text: "React",
@@ -128,6 +131,7 @@ module.exports = {
   configureWebpack: config => {
     config.resolve.alias["@api"] = resolve("api");
     config.resolve.alias["@utils"] = resolve("utils");
+    // 压缩后要报错
     // config.plugins.push(
     //   ...[
     //     new CompressionWebpackPlugin({
