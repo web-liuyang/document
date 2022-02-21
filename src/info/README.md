@@ -7,7 +7,7 @@
 - 年龄：22
 - 性别：男
 - 前端经验：3年
-- 学历：大专（目前正在自考本科）- 计算机科学与技术
+- 学历：专科
 - 坐标： 成都市金牛马鞍（前锋路）
 - GitHub：[web-liuyang](https://github.com/web-liuyang)
 - Blog：[博客主页](https://webliuyang.com)
@@ -48,6 +48,11 @@
 - 手写Vue框架mini版
 
   [点我链接文档](/vue/custom-vue) —— [点我链接源码](https://github.com/web-liuyang/custom-vue)
+
+- 手写Promise
+
+  [点我链接文档](/typescript/custom-promise) —— [点我链接源码](https://github.com/web-liuyang/custom-promise)
+
 
 - 基于原生TS编写的实用工具库
 
