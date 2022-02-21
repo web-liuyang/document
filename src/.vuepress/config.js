@@ -65,6 +65,7 @@ module.exports = {
         items: [
           { text: "l-native-tools", link: "/typescript/l-native-tools/" },
           { text: "l-browser-storage", link: "/typescript/l-browser-storage/" },
+          { text: "custom-promise", link: "/typescript/custom-promise/" },
         ],
       },
       {
