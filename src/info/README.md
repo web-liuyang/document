@@ -4,7 +4,7 @@
 
 - 姓名：刘洋
 - 联系电话：18284335838
-- 年龄：22
+- 年龄：23
 - 性别：男
 - 前端经验：3年
 - 学历：专科
@@ -18,13 +18,13 @@
 ```tsx
 {
   var base = ['HTML5+', 'CSS3', 'JS', 'TS'];
-  var frame = ['Vue', 'React', 'Umi3', 'Uniapp'];
+  var frame = ['Vue', 'React', 'Uniapp'];
   var build = ['Webpack', 'Rollup', 'Vite'];
   var components = ['Antd', 'Element', 'Echarts', "Vant Ui"];
   var map = ['BMap', 'AMap'];
-  var node = ['Express', 'Mysql', 'Sequelize'];
+  var node = ['Express'];
   var extra = ['WebSocket', 'Sass', 'Less', 'SEO'];
-  var server = ['Java', 'Mybatis', 'Spring', 'Linux', 'Shell']
+  var server = ['Java', 'Mybatis', 'Spring', 'Mysql', 'Linux', 'Shell']
 }
 ```
 
@@ -32,18 +32,18 @@
 
 ```tsx
 1. 熟练掌握上面技术栈Web前端技术及相关技术
-2. 具有至少3年以上web前端开发工作经验，能独立承担和推进开发工作，对前端代码优化、代码规范及安全开发有丰富的经验
+2. 具有3年左右web前端开发工作经验，能独立承担和推进开发工作，对前端代码优化、代码规范及安全开发有丰富的经验
 3. 熟练掌握主流前端框架或者UI库,根据需求实现控件设计、交互实现
-4. 熟悉es2015+,能使用rollup等构建工具优化打包组件与SDK，处理打包过程发生的各种问题
+4. 熟悉es2015+,能使用rollup,webpack等构建工具优化打包组件与SDK，处理打包过程发生的各种问题
 5. 了解比较主流的设计模式并实践到工作中
-6. 能够独立负责前端项目、业务、以及各种比较复杂的tree型结构与逻辑
+6. 能够独立负责前端项目、业务、以及各种tree型及链表结构与逻辑
 7. 项目中实行各种前端组件化，具有良好的OOP编程思想
 8. 独立负责过微前端的大型项目，并具有落地经验
 9. 有自己的SDK、组件库、blogs
-10. 会使用Java编写服务端 (目前发展方向为全栈)
+10. 可以使用Java编写服务端
 ```
 
-### 轮子
+### 自己写的
 
 - 手写Vue框架mini版
 
@@ -66,6 +66,14 @@
 
   [点我链接文档](/vue/vuepress/) —— [点我链接源码](https://github.com/web-liuyang/vuepress-plugin-handle-sidebar)
 
+- 基于React编写的组件库
+
+    [点我链接文档](/react/components/) —— [点我链接源码](https://github.com/web-liuyang/l-react-ui)
+
+- 基于React编写的hooks
+
+    [点我链接文档](/react/hooks/) —— [点我链接源码](https://github.com/web-liuyang/l-react-hooks)Ï
+
 - 基于Uniapp编写的组件库
 
   [点我链接文档](/uniapp/components/) —— [点我链接源码](https://github.com/web-liuyang/lView-UI)
@@ -74,64 +82,11 @@
 
   [点我链接文档](/uniapp/sdk/) —— [点我链接源码](https://github.com/web-liuyang/uni-app-tools)
 
-- 基于React编写的组件库
-
-  [点我链接文档](/react/components/) —— [点我链接源码](https://github.com/web-liuyang/l-react-ui)
-
-- 基于React编写的hooks
-
-  [点我链接文档](/react/hooks/) —— [点我链接源码](https://github.com/web-liuyang/l-react-hooks)
-
 ## 工作状况
-
-### 千一科技有限公司
-
-#### 工作时间：2018.07 - 2019.12
-
-#### 所在部门：
-
-- 软件研发部
-
-#### 工作描述：
-
-- 开发前端项目。
-- 原生JQ编写页面。
-- 负责一些网站的重构。
-- 测试并解决所有项目遗漏 BUG。
-- 维护以及优化老项目。
-
-#### 项目实践：
-
-#### 乐山城东蔬菜批发市场
-
-- 项目技术：`原生JS、JQ、bootcss库`
-
-- 我的职责：
-
-  ```json
-  [
-    "负责登陆注册与一些小页面与部分组件的编写",
-    "测试网页中各种BUG",
-    "考虑向下兼容性问题",
-  ]
-  ```
-
-- 技术使用：
-
-  ```json
-  [
-    "使用JQ库进行开发",
-    "使用bootcss库进行页面美化",
-    "使用animate动画库进行组件过度",
-    "与合作方进行数据交互对接",
-  ]
-  ```
-
-
 
 ### 成都鑫红江汽车租赁有限公司
 
-#### 工作时间：2019-12 - 2021-03
+#### 工作时间：2019-07 - 2021-03
 
 #### 所在部门：
 
@@ -139,6 +94,7 @@
 
 #### 工作描述：
 
+- 前端负责人
 - 开发前端项目。
 - 负责公司前端项目的组件的编写。
 - 负责公司前端项目的所有封装插件的编写。
@@ -223,7 +179,7 @@
   [
     "负责H5在APP中的实现",
     "调用原生能力进行功能调用",
-    "用户信息统计"
+    "用户信息统计，前端埋点等"
   ]
   ```
 
@@ -242,7 +198,7 @@
 
 ### 中油优途电子商务
 
-#### 工作时间：2021-04 - 至今
+#### 工作时间：2021-04 - 2022-03
 
 #### 所在部门：
 
