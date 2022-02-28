@@ -10,8 +10,8 @@
 - 学历：专科
 - 坐标： 成都市金牛马鞍（前锋路）
 - GitHub：[web-liuyang](https://github.com/web-liuyang)
-- Blog：[博客主页](https://webliuyang.com)
-- [网页版简历链接](https://webliuyang.com/info/)
+- Blog：[博客主页](http://webliuyang.com)
+- [网页版简历链接](http://webliuyang.com/info/)
 
 ### 技术栈
 
