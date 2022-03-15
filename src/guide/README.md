@@ -6,7 +6,7 @@
 2. [uniapp 的组件文档](/uniapp/components/)
 3. [Vuepress 自动生成目录插件](/vue/vuepress/)
 4. [costom-vue Vue 源码实现](/vue/custom-vue/)
-4. [costom-promise Promise 源码实现](/vue/custom-promise/)
+4. [costom-promise Promise 源码实现](/typescript/custom-promise/)
 5. [typescript 常用工具库](/typescript/l-native-tools)
 6. [typescript 浏览器存储方案](/typescript/l-browser-storage)
 7. [react 组件库](/react/components/)
