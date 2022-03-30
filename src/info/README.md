@@ -24,7 +24,7 @@
   var map = ['BMap', 'AMap'];
   var node = ['Express'];
   var extra = ['WebSocket', 'Sass', 'Less', 'SEO'];
-  var server = ['Java', 'Mybatis', 'Spring', 'Mysql', 'Linux', 'Shell']
+  var server = ['Java', 'Mybatis-Plus', 'Spring Boot', 'Mysql', 'Linux']
 }
 ```
 
