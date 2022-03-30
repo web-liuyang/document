@@ -49,7 +49,8 @@ module.exports = {
       { text: "指南", link: "/guide/" },
       { text: "开发规范", link: "/standard/" },
       // { text: '个人简历', link: '/info/' },
-      { text: "Node", link: "/node/" },
+      // { text: "Node", link: "/node/" },
+      { text: "Java", ariaLabel: "Java Menu", items: [{ text: "POJO", link: "/java/pojo/" }] },
       {
         text: "Linux",
         ariaLabel: "Linux Menu",
