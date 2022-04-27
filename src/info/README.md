@@ -8,7 +8,6 @@
 - 性别：男
 - 前端经验：3年
 - 学历：专科
-- 坐标： 成都市金牛马鞍（前锋路）
 - GitHub：[web-liuyang](https://github.com/web-liuyang)
 - Blog：[博客主页](http://webliuyang.com)
 - [网页版简历链接](http://webliuyang.com/info/)
@@ -24,7 +23,6 @@
   var map = ['BMap', 'AMap'];
   var node = ['Express'];
   var extra = ['WebSocket', 'Sass', 'Less', 'SEO'];
-  var server = ['Java', 'Mybatis-Plus', 'Spring Boot', 'Mysql', 'Linux']
 }
 ```
 
