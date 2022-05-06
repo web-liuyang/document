@@ -2,7 +2,7 @@ import axios from "./request";
 
 const URL = {
   GET_USERINFO: "",
-  GET_REPOS: "/repos",
+  GET_REPOS: "/repos?per_page=100",
 };
 
 /**
