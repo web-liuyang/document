@@ -48,6 +48,7 @@ module.exports = {
     nav: [
       { text: "指南", link: "/guide/" },
       { text: "开发规范", link: "/standard/" },
+      { text: "学习", ariaLabel: "Study Menu", items: [{ text: "重构2", link: "/study/refactoring/" }] },
       // { text: '个人简历', link: '/info/' },
       // { text: "Node", link: "/node/" },
       { text: "Java", ariaLabel: "Java Menu", items: [{ text: "POJO", link: "/java/pojo/" }] },
@@ -122,9 +123,7 @@ module.exports = {
       {
         transformer: (timestamp, lang) => {
           let time = new Date(timestamp);
-          return (
-            time.toLocaleDateString().replace(/\//g, "-") + " " + time.toTimeString().substr(0, 8)
-          );
+          return time.toLocaleDateString().replace(/\//g, "-") + " " + time.toTimeString().substr(0, 8);
         },
       },
     ],
